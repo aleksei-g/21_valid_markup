@@ -23,6 +23,31 @@ $("#menu-toggle").click(function(e) {
     $("#sidebar-wrapper").toggleClass("active");
 });
 
+$("#btn-top").click(function() {
+    $('#menu-close').click();
+    window.location='#top';
+});
+
+$("#btn-go-main").click(function() {
+    $('#menu-close').click();
+    window.location='#top';
+});
+
+$("#btn-about").click(function() {
+    $('#menu-close').click();
+    window.location='#services';
+});
+
+$("#btn-services").click(function() {
+    $('#menu-close').click();
+    window.location='#services';
+});
+
+$("#btn-contact").click(function() {
+    $('#menu-close').click();
+    window.location='#contact';
+});
+
 $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {

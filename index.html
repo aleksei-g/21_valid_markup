@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Твой дом: Агенство недвижимости</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/fonts.googleapis.min.css" rel="stylesheet" type="text/css">
+    <link href="css/main.min.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,24 +26,23 @@
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li>
+                <button id="menu-close" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></button>
+            </li>
             <li class="sidebar-brand">
-                <button class="btn-link" onclick = "$('#menu-close').click(); window.location='#top'">Агентство</button>
+                <button id="btn-top" class="btn-link">Агентство</button>
             </li>
             <li>
-                <button class="btn-link" onclick = "$('#menu-close').click(); window.location='#top'">Главная</button>
+                <button id="btn-go-main" class="btn-link">Главная</button>
             </li>
             <li>
-                <button class="btn-link" onclick = "$('#menu-close').click(); window.location='#services'">О нас</button>
+                <button id="btn-about" class="btn-link">О нас</button>
             </li>
             <li>
-                <button class="btn-link" onclick = "$('#menu-close').click(); window.location='#services'">Услуги</button>
+                <button id="btn-services" class="btn-link">Услуги</button>
             </li>
-            <!-- <li>
-                <a href="#portfolio" onclick = $("#menu-close").click(); >Портфолио</a>
-            </li> -->
             <li>
-                <button class="btn-link" onclick = "$('#menu-close').click(); window.location='#contact'">Контакты</button>
+                <button id="btn-contact" class="btn-link">Контакты</button>
             </li>
         </ul>
     </nav>
@@ -50,8 +50,8 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <div style="margin: 0; padding: 0; font-size: 4.5em; font-weight: 700;">Твой Дом</div>
-            <div style="margin-top: 20px; margin-bottom: 10px; font-weight: 500; font-size: 24pt">Агентство недвижимости</div>
+            <div class='site-name-header'>Твой Дом</div>
+            <div class='site-name-subheader'>Агентство недвижимости</div>
             <br>
             <a href="#about" class="btn btn-dark btn-lg">Узнать больше >></a>
         </div>
@@ -141,14 +141,14 @@
 
     <!-- Map -->
     <div id="contact">
-      <div id="map" class="map" style="width: 100%;"></div>
+      <div id="map" class="map"></div>
 
 
       <div class="container">
         <div class="row text-center">
           <div class="col-lg-12">
-            <div style="font-size: 30px; margin-top: 40px; margin-bottom: 20px;">Наш офис</div>
-            <img src="img/office%20&%20place.jpg" width="600" class="img-rounded center-block" alt="фото офиса компании">
+            <div class='header-contacts'>Наш офис</div>
+            <img src="img/office%20&%20place.min.jpg" width="600" class="img-rounded center-block" alt="фото офиса компании">
           </div>
         </div>
       </div>
@@ -182,9 +182,9 @@
     </footer>
 
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/custom_theme.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/custom_theme.min.js"></script>
 
 </body>
 
